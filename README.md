@@ -58,4 +58,4 @@ Once the model has been built and validated, it is time to test it in the field.
 ![detect](https://user-images.githubusercontent.com/107320990/196509257-8456d024-846d-4e2d-b569-feed6961c18b.jpeg)
 
 
-From this image comes further confirmation that the model can correctly classify traffic lights.
+From this image comes further confirmation that the model can correctly classify traffic lights. 
