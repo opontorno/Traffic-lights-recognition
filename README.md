@@ -8,7 +8,7 @@ To do this, the pre-trained network '*YOLO*' in its fifth version will be used. 
 
 The notebook is structured in three parts: a first preliminary phase, the 'Data Visualization phase', the 'Model-building phase' and the 'Testing phase'.
 
-In the first part, the libraries used for the data visualisation phase and the model building phase are implemented. Below is shown the procedure for downloading the dataset from *kaggle.com* and how to make it usable in your own work directory.
+In the first part, the libraries used for the data visualisation phase and the model building phase are implemented. Below is shown the procedure for downloading the dataset from *kaggle.com* and how to make it usable in your own work directory. The downloaded file contains the folders 'train' and 'test' in which respectively the images with which the model will be trained and those which will be used to test it are located. Inside the 'train' folder there is also a file with the extension '*.json*', which contains various information about each train image. In particular, it specifies the coordinates of each bounded box delimiting each traffic light, the colour of the traffic light if it is lit, the coordinates of a smaller bounded box delimiting only the light that is lit, and various other instructions to be given to the algorithm.
 
 ## **Data Visualization phase**
 
