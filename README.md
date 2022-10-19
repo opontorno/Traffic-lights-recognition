@@ -1,7 +1,7 @@
 # **Traffic lights recognition: notebook explanation**
 
 ## **Introduction**
----
+
 The basic idea of this report is to build a model emulating the behaviour of an autonomous driving car in the management of the action to be taken upon recognition of a traffic light: if the light is off, ignore it, and if the light is on, stop, slow down or continue, depending on the colour. The algorithm must therefore first be able to recognise traffic lights and then classify them according to four classes: off, green, yellow and red. It is therefore a matter of training a network in performing object detection and classification.
 
 To do this, the pre-trained network '*YOLO*' in its fifth version will be used. YOLO an acronym for 'You only look once', is an object detection algorithm that divides images into a grid system. Each cell in the grid is responsible for detecting objects within itself. YOLO is one of the most famous object detection algorithms due to its speed and accuracy (*https://github.com/ultralytics/yolov5*). Once this network is taken, a fine-tuning of the hyper-parameters will be done, so as to force the network to concentrate only on recognising the traffic lights by giving it as input a series of images with relative labels, which specify the coordinates of the bounded boxes of each traffic light. The network's objective will be to learn to find the coordinates of any bounded boxes of traffic lights in an image. In addition, YOLO not only recognises the objects in the images, but is also able to classify them. In fact, by specifying in each traffic light label the class to which it belongs, the network will also be able to classify by itself the class of each new traffic light.
